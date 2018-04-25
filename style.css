@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.button {
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    margin: 10px;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 0px auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    margin-top: 40px;
+}
+
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: silver;
+    padding: 15px;
+    color: white;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    color: black;
+    display: inline-block;
+
+}
+
+.sluitpana, .sluitcls, .sluita7 {
+    float: right;
+    font-size: 30px;
+    color: blue;
+}
+
+.sluitpana, .sluita7, .sluitcls:hover, .sluitpana, .sluita7, .sluitcls:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.plaatjeKlein {
+    height: 200px;
+    width: auto;
+}
+
+.plaatjeGroot {
+    width: 50%;
+    height: auto;
+    float: left;
+
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    width: 100%;
+    background: gray;
+    text-align: center;
+    margin-top: 120px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.links{
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    padding-left: 10px;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .links{
+        width: 100%;
+    }
+    .plaatjeGroot{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .plaatjeGroot{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 950px) {
+
+    .plaatjeKlein {
+        height: 150px;
+        width: auto;
+    }
+}
+
+footer{
+  margin-top: 350px;
+}
